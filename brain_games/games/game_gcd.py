@@ -1,7 +1,6 @@
 import prompt as prompt
 from random import randint
 from brain_games.greetings import name
-from random import randint, choice
 
 print('Find the greatest common divisor of given numbers.')
 

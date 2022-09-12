@@ -1,5 +1,4 @@
 import prompt as prompt
-from random import randint
 from brain_games.greetings import name
 from random import randint, choice
 

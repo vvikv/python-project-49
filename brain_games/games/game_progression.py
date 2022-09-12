@@ -1,7 +1,7 @@
 import prompt as prompt
 from random import randint
 from brain_games.greetings import name
-from random import randint, choice
+from random import choice
 
 print('What number is missing in the progression?')
 
@@ -36,4 +36,3 @@ def game_progression():
 Let's try again, {name}!""")
         count += 1
     print(f'Congratulations, {name}!')
-
