@@ -11,7 +11,7 @@ def game_progression():
 
     while count < 3:
         num1 = randint(2, 5)
-        num2 = randint(20, 30)
+        num2 = randint(20, 50)
         num3 = randint(3, 6)
 
         progression = list(range(num1, num2, num3))
