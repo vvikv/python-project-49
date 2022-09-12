@@ -35,5 +35,12 @@ Let's try again, {name}!""")
         elif is_prime(a) and answer == 'no':
             return print(f"""'{answer}' is wrong answer ;(. Correct answer was 'yes'.
 Let's try again, {name}!""")
+        elif answer != 'no' and answer != 'yes' and is_prime(a):
+            return print(f"""'{answer}' is wrong answer ;(. Correct answer was 'yes'.
+Let's try again, {name}!""")
+        elif answer != 'no' and answer != 'yes' and is_prime(a) == False:
+            return print(f"""'{answer}' is wrong answer ;(. Correct answer was 'no'.
+Let's try again, {name}!""")
+
         count += 1
     print(f'Congratulations, {name}!')
