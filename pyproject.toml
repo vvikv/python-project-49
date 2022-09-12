@@ -5,15 +5,14 @@ packages = [
 name = "hexlet-code"
 version = "0.1.0"
 description = ""
-authors = ["vvikv <muccu4114@gmail.com>"]
+authors = ["vvikv"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
 prompt = "^0.4.1"
 
-
-[tool.poetry.group.dev.dependencies]
+[tool.poetry.dev-dependencies]
 flake8 = "^5.0.4"
 
 [build-system]
