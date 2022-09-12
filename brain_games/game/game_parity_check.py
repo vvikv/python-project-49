@@ -1,17 +1,15 @@
 import prompt as prompt
+from brain_games.greetings import name
 from random import randint
 
-print("Welcome to the Brain Games!")
-name = prompt.string('May I have your name? ')
-print('Hello, ' + name + '!')
 print('Answer "yes" if the number is even, otherwise answer "no".')
 
 
-def answer_user():
+def parity_check():
     count = 0
 
     while count < 3:
-        number = randint(1, 1000)
+        number = randint(1, 100)
         question = ('Question: ' + str(number))
         print(question)
         answer = prompt.string('Your answer: ')
