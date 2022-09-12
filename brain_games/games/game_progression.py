@@ -18,14 +18,16 @@ def game_progression():
 
         random_num = choice(progression)
 
-        def progression_les():
-            for i in range(len(progression)):
-                if progression[i] == random_num:
-                    progression[i] = '..'
-            return progression
+        def progression_les(a):
+            for i in range(len(a)):
+                if a[i] == random_num:
+                    a[i] = '..'
+            return a
 
+        progression_pul = progression_les(progression)
         correct_answer = random_num
-        print('Question: ' + str(progression_les()))
+        question = " ".join(map(str, progression_pul))
+        print('Question: ' + question)
         answer = prompt.string('Your answer: ')
         if answer == str(correct_answer):
             print('Correct!')
