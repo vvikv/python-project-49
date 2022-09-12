@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from brain_games.game.game_parity_check import parity_check
+from brain_games.games.game_parity_check import parity_check
 from brain_games.greetings import welcome
 
 
