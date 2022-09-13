@@ -1,38 +1,20 @@
-import prompt as prompt
-from random import randint
-from brain_games.greetings import name
-from random import choice
-
-print('What number is missing in the progression?')
+from random import randint, choice
 
 
 def game_progression():
-    count = 0
+    num1 = randint(2, 5)
+    num2 = randint(30, 50)
+    num3 = randint(3, 6)
+    progression = list(range(num1, num2, num3))
+    random_num = choice(progression)
+    progression_pul = progression_les(progression, random_num)
+    correct_answer = random_num
+    question = " ".join(map(str, progression_pul))
+    return correct_answer, question
 
-    while count < 3:
-        num1 = randint(2, 5)
-        num2 = randint(20, 50)
-        num3 = randint(3, 6)
 
-        progression = list(range(num1, num2, num3))
-
-        random_num = choice(progression)
-
-        def progression_les(a):
-            for i in range(len(a)):
-                if a[i] == random_num:
-                    a[i] = '..'
-            return a
-
-        progression_pul = progression_les(progression)
-        correct_answer = random_num
-        question = " ".join(map(str, progression_pul))
-        print('Question: ' + question)
-        answer = prompt.string('Your answer: ')
-        if answer == str(correct_answer):
-            print('Correct!')
-        elif answer != str(correct_answer):
-            return print(f"""'{answer}' is wrong answer ;(. Correct answer was {correct_answer}.
-Let's try again, {name}!""")
-        count += 1
-    print(f'Congratulations, {name}!')
+def progression_les(progression, ran_num):
+    for i in range(len(progression)):
+        if progression[i] == ran_num:
+            progression[i] = '..'
+    return progression

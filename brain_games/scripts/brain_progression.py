@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 from brain_games.logic.greetings import welcome
-from brain_games.games.game_progression import game_progression
+from brain_games.logic.games_logic import game_logic_progression
 
 
 def main():
     welcome()
-    game_progression()
+    game_logic_progression()
 
 
 if __name__ == '__main__':
