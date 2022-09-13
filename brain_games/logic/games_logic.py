@@ -1,6 +1,5 @@
 from brain_games.logic.greetings import name
 import prompt as prompt
-from random import randint
 from brain_games.games.game_parity_check import parity_check, number_game_even
 import sys
 
